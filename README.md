@@ -103,8 +103,8 @@ The `Colorazie()` is a function where happen the replace of chars and colors usi
 ## Game
 
 The game literalliy runs here.
-In this class, the keys move and rotation the pieces, using the `Keyboard` libary t, get the piaces down, and summon others pieces
-This part of the code, is a multiprocessing, reciving a lambda with a `insert()` function that move and rotation the objects pieces 
+In this class, the keys move and rotation the pieces, using the `Keyboard` libary, get the piaces down, and summon others pieces.  
+This part of the code, is a multiprocessing, reciving a lambda with a `insert()` function that move and rotation the objects pieces.   
 `keyboard.add_hotkey('KEY', lambda: insert('TYPE'))`
 
 
