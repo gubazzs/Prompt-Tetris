@@ -10,7 +10,8 @@ A version of the most popular gamfe, Tetris, working in prompt without GUI
 ## About
 The game is based in a matrix 10x20, 
 ### Menu
-```markdonw
+
+```python
 [][][][][][]  [][][][][][] [][][][][][] [][][][][][] [][][] [][][][][][]
 [][][][][][]  [][][][][][] [][][][][][] [][][][][][] [][][] [][][][][][]
     [][]      [][]             [][]     [][]    [][] [][][] [][]        
@@ -92,14 +93,17 @@ The board where tha magic happens, cause we have importants function like:
 - `FixShape()`
 - `removeLines`
 
-all of them, interacting with both the board and the pieces.
-for moving better the picies, each move it's call `removeShape()` and after call `AddShape()` 
-The `ShowMap()` it's a function that is looping for, returning the `Coloraze()` function, printing line each line.
-The `Colorazie()` is a function where happen the replace of chars and colors using the `colorama` libary
+all of them, interacting with both the board and the pieces.  
+for moving better the pieces, each move it's call `removeShape()` and after call `AddShape()`.  
+The `ShowMap()` it's a function that is looping for, returning the `Coloraze()` function, printing line each line.  
+The `Colorazie()` is a function where happen the replace of chars and colors using the `colorama` libary.  
 
 ## Game
 the game literalliy runs here.
-in this class, the keys move and rotation the piaces, get the piaces down, and summon others peaces 
+in this class, the keys move and rotation the pieces, using tha `Keyboard` libary t, get the piaces down, and summon others pieces
+
+`keyboard.add_hotkey('KEY', lambda: insert('TYPE'))`
+
 
 ## Install
 
