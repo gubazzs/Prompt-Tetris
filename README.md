@@ -28,10 +28,11 @@ Was used this line for create a option with box out.
 ```python
 f"{" "*30}┌{'─'*3}{'─'*int(len(Op[0]))}{'─'*3 }┐\n {" "*32}│   {Op[0]}   │\n {" "*32}└{'─'*3}{'─'*int(len(Op[0]))}{'─'*3}┘"
 ```
-┌─────────────┐
-│   INICIAR   │
-└─────────────┘
-
+```python
+┌─────────────┐  
+│   INICIAR   │  
+└─────────────┘  
+```
 ### Pices
 The pices it's a class with: Shape, Rotation, TypeShape and a Rot.
 
