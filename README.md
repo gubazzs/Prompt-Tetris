@@ -28,7 +28,9 @@ Was used this line for create a option with box out.
 ```python
 f"{" "*30}┌{'─'*3}{'─'*int(len(Op[0]))}{'─'*3 }┐\n {" "*32}│   {Op[0]}   │\n {" "*32}└{'─'*3}{'─'*int(len(Op[0]))}{'─'*3}┘"
 ```
-
+┌─────────────┐
+│   INICIAR   │
+└─────────────┘
 
 ### Pices
 The pices it's a class with: Shape, Rotation, TypeShape and a Rot.
@@ -47,7 +49,7 @@ TypeShaope
 
 The `self.__TypeShape` it's recive the value like a ID for exemple `self.__TypeShape = 'T'`
 
-Rotarion
+Rotation
 
 The Rotation fuction change the `self.__Shape` and use the `self.__Rot` like a counter for choices in the `match case`.
 
@@ -93,15 +95,16 @@ The board where tha magic happens, cause we have importants function like:
 - `FixShape()`
 - `removeLines`
 
-all of them, interacting with both the board and the pieces.  
-for moving better the pieces, each move it's call `removeShape()` and after call `AddShape()`.  
+All of them, interacting with both the board and the pieces.  
+For moving better the pieces, each move it's call `removeShape()` and after call `AddShape()`.  
 The `ShowMap()` it's a function that is looping for, returning the `Coloraze()` function, printing line each line.  
 The `Colorazie()` is a function where happen the replace of chars and colors using the `colorama` libary.  
 
 ## Game
-the game literalliy runs here.
-in this class, the keys move and rotation the pieces, using tha `Keyboard` libary t, get the piaces down, and summon others pieces
 
+The game literalliy runs here.
+In this class, the keys move and rotation the pieces, using the `Keyboard` libary t, get the piaces down, and summon others pieces
+This part of the code, is a multiprocessing, reciving a lambda with a `insert()` function that move and rotation the objects pieces 
 `keyboard.add_hotkey('KEY', lambda: insert('TYPE'))`
 
 
