@@ -8,7 +8,7 @@ A version of the most popular gamfe, Tetris, working in prompt without GUI
 > The config option is chage Icons, colors and a difficult
 
 > [!FIX BUGS]<p>
-> The last Update i Fix Menu BUG
+> The last Update i Fix Menu BUG <p>
 > The way that i called the game and menu change!
 
 
