@@ -1,4 +1,8 @@
 from questionary import Style, select
+import os, time
+from src.Game import Jogo
+
+TClear = "clear" if os.name == 'posix' else "cls"
 
 def menu():
   Text = '''
@@ -34,5 +38,17 @@ def menu():
       choices=opcoes,
       style=custom_style,
   ).ask()
-  
-  return opcoes.index(opcao_selecionada)
+
+  game = Jogo()
+  os.system(TClear)
+
+  OP = opcoes.index(opcao_selecionada)
+
+  if OP == 0:
+    os.system(TClear)
+    time.sleep(2)
+    game.jogar()
+  elif OP == 1:
+    print("holding")
+  elif OP == 2:
+    os._exit()

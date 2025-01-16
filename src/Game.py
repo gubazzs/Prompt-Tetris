@@ -1,8 +1,9 @@
 from src.Tabuleiro import Tabuleiro
 from src.Pecas import JShape, LShape, SquareShape, LineShape, TShape, ZShape, SShape
-import time, os, random, src.Menu
+import time, os, random
 import keyboard
-from src.Menu import menu
+
+TClear = "clear" if os.name == 'posix' else "cls"
 
 class Jogo():
     
@@ -37,9 +38,9 @@ class Jogo():
             self.posX = 3
             self.posY = 0
             if self.Tabu.Colision(self.pecaAtual, self.posX, self.posY):
+                os.system(TClear)
                 print("Fim de Jogo")
-                os.system("cls")
-                menu()
+                time.sleep(3)
             self.counter = 0
     
     def ComandoTWO(self):
@@ -68,12 +69,15 @@ class Jogo():
         keyboard.add_hotkey('up', lambda: insert('r'))               
      
         while not self.Tabu.Colision(self.pecaAtual, self.posX, self.posY):
-            os.system('cls')
+            os.system(TClear)
             self.DescerPeca()
             self.Tabu.ShowMap()
             self.counter += 1
             time.sleep(1/75)
-        os.system('cls')
+            if self.Tabu.Colision(self.pecaAtual, self.posX, self.posY):
+                break
+        os.system(TClear)
+
                                               
     def jogar(self):
         self.ComandoTWO()
