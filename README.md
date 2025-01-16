@@ -7,6 +7,12 @@ A version of the most popular gamfe, Tetris, working in prompt without GUI
 > The Tetris will recive new features, Conunter Points, Next Piaces, Difficult, and a menu choice call config.
 > The config option is chage Icons, colors and a difficult
 
+> [!FIX BUGS]<p>
+> The last Update i Fix Menu BUG
+> The way that i called the game and menu change!
+
+
+
 ## About
 The game is based in a matrix 10x20, 
 ### Menu
