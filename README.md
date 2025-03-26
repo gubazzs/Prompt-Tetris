@@ -1,4 +1,4 @@
-# Prompt-Tetris
+# CLI-Tetris
 
 A version of the most popular gamfe, Tetris, working in prompt without GUI
 
